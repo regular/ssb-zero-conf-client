@@ -5,7 +5,6 @@ Bring a netKey (caps.shs) and an ssb keypair and you get a working ssb client!
 
 This works by scanning the lan for broadcasts of ssb-servers with ssb-lan installed. I then connects to any server that broadcasts the correct netKey and tries to request its manifest. This will only work when the provided public key (keys.public) is allowed to do this, for example because it is listed in the server's `config.master`.
 
-I build this for connecting to ssb-servers started by Bay Of Plenty. Run `bay-of-plenty -- --authenticate keyfile` to authorize your public key with the ssb-servers spawned by Bay Of Plenty.
 
 ``` js
 const client = require('ssb-zero-conf-client')
@@ -24,5 +23,7 @@ client(netKey, keys, (err, ssb, opts) =>{
   })
 })
 ```
+
+I built this for connecting to ssb-servers started by Bay Of Plenty. Run `bay-of-plenty -- --authorize keyfile` to authorize your public key with all ssb-servers spawned by Bay Of Plenty.
 
 License: MIT
