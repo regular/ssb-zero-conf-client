@@ -1,6 +1,6 @@
 {
   "name": "ssb-zero-conf-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bring a netKey (caps.shs) and an ssb keypair and you get a working ssb client!",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/regular/ssb-zero-conf-client.git"
   },
-  "keywords": ["tre", "bay of plenty"],
+  "keywords": [
+    "tre",
+    "bay of plenty"
+  ],
   "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
   "license": "MIT",
   "bugs": {
